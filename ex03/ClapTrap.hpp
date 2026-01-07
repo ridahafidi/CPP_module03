@@ -6,13 +6,13 @@
 
 class ClapTrap
 {
-protected:
+    protected:
     std::string Name;
     unsigned int HitPoints;
     unsigned int EnergyPoints;
     unsigned int AttackDamage;
-
-public:
+    
+    public:
     ClapTrap();
     ClapTrap(const std::string &N);
     ClapTrap(const ClapTrap &other);
@@ -31,6 +31,8 @@ public:
     void beRepaired(unsigned int amount);
 };
 
-
+// #include "ScavTrap.hpp"
+// #include "FragTrap.hpp"
+// #include "DiamondTrap.hpp"
 
 #endif

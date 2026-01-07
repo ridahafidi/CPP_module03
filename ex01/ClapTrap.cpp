@@ -61,7 +61,7 @@ std::string ClapTrap::get_name(void) const
     return (Name);
 }
 
-ClapTrap::ClapTrap():Name(""),HitPoints(10),EnergyPoints(10),AttackDamage(0)
+ClapTrap::ClapTrap():Name("Default"),HitPoints(10),EnergyPoints(10),AttackDamage(0)
 {
     std::cout << "ClapTrap Constructor called\n";
 }
