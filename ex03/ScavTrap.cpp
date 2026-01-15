@@ -14,6 +14,17 @@ ScavTrap::ScavTrap(const std::string &N):ClapTrap(N){
     std::cout << "ScavTrap Parametrized Constructor called \n";
 }
 
+ScavTrap::ScavTrap(const ScavTrap &other):ClapTrap(other){
+    std::cout << "ScavTrap Copy Constructor called \n";
+}
+
+ScavTrap &ScavTrap::operator=(const ScavTrap &other){
+    if (this != &other)
+        ClapTrap::operator=(other);
+    std::cout << "ScavTrap Assignment Operator called \n";
+    return (*this);
+}
+
 ScavTrap::~ScavTrap()
 {
     std::cout << "ScavTrap Destructor called \n";

@@ -57,9 +57,12 @@ int main()
     DiamondTrap x("rajoL2");
     DiamondTrap x2("rajol");
     DiamondTrap x3;
-    x3 = x2 = x2;
+    x3 = x2 = x;
     x2.attack(x2.get_name());
     x2.takeDamage(x2.get_AttackDamage());
     x3.beRepaired(x2.get_HitPoints());
+    x3.whoAmI();
+    x2.whoAmI();
+    x.whoAmI();
     std::cout << x3.get_HitPoints() << "\n";
 }

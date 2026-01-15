@@ -14,6 +14,17 @@ FragTrap::FragTrap(const std::string &N):ClapTrap(N){
     std::cout << "FragTrap Parametrized Constructor called \n";
 }
 
+FragTrap::FragTrap(const FragTrap &other):ClapTrap(other){
+    std::cout << "FragTrap Copy Constructor called \n";
+}
+
+FragTrap &FragTrap::operator=(const FragTrap &other){
+    if (this != &other)
+        ClapTrap::operator=(other);
+    std::cout << "FragTrap Assignment Operator called \n";
+    return (*this);
+}
+
 FragTrap::~FragTrap()
 {
     std::cout << "FragTrap Destructor called \n";
