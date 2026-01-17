@@ -6,8 +6,6 @@ int main()
     ClapTrap Enemy("l3adow dyal si mhamed");
     ClapTrap Enemy1 = Enemy;
     ClapTrap Enemy2(Enemy1);
-    
-
 
     Player.set_name("si mhamed");
     Player.attack(Enemy.get_name());
@@ -26,5 +24,4 @@ int main()
     E1 = E2 = E3 = E4;
     E1.attack("si mhamed");
     E4.attack("si mhamed");
-
 }

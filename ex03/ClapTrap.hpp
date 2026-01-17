@@ -26,7 +26,7 @@ class ClapTrap
     unsigned int get_EnergyPoints(void) const;
     void    set_AttackDamage(const unsigned int &NewAttackDamage);
     unsigned int get_AttackDamage(void) const;
-    virtual void attack(const std::string& target);
+    void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 };
