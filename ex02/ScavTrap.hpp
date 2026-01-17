@@ -5,7 +5,7 @@
 
 class ScavTrap : public ClapTrap
 {
-public:
+    public:
     ScavTrap();
     ScavTrap(const std::string &N);
     ScavTrap(const ScavTrap &other);

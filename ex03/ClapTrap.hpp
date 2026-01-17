@@ -26,13 +26,10 @@ class ClapTrap
     unsigned int get_EnergyPoints(void) const;
     void    set_AttackDamage(const unsigned int &NewAttackDamage);
     unsigned int get_AttackDamage(void) const;
-    void attack(const std::string& target);
+    virtual void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 };
 
-// #include "ScavTrap.hpp"
-// #include "FragTrap.hpp"
-// #include "DiamondTrap.hpp"
 
 #endif

@@ -52,4 +52,11 @@ int main()
     L3.beRepaired(L2.get_HitPoints());
     std::cout << L3.get_HitPoints() << "\n";
     L3.highFivesGuys();
+
+    std::cout << "\n\n";
+    ClapTrap *p;
+    p = &L1;
+    p->attack("test");
+    p = &T1;
+    p->attack("test");
 }

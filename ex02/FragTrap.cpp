@@ -37,5 +37,16 @@ void FragTrap::highFivesGuys(void)
 
 void FragTrap::attack(const std::string& target)
 {
+    if (HitPoints == 0)
+    {
+        std::cout << "FragTrap " << get_name() << " can't attack, no hit points left!" << std::endl;
+        return;
+    }
+    if (EnergyPoints == 0)
+    {
+        std::cout << "FragTrap " << get_name() << " can't attack, no energy points left!" << std::endl;
+        return;
+    }
+    EnergyPoints--;
     std::cout << "FragTrap " << get_name() << " attacks " << target << ", causing " << get_AttackDamage() << " points of damage!" << std::endl;
 }

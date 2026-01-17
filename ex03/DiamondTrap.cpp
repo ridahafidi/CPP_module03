@@ -2,17 +2,13 @@
 
 DiamondTrap::DiamondTrap():ClapTrap("_clap_name"), Name("")
 {
-    HitPoints = FragTrap::HitPoints;
-    EnergyPoints = ScavTrap::EnergyPoints;
-    AttackDamage = FragTrap::AttackDamage;
+    EnergyPoints = 50;
     std::cout << "DiamondTrap Constructor called \n";
 }
 
 DiamondTrap::DiamondTrap(const std::string &N):ClapTrap(N + "_clap_name"), Name(N)
 {
-    HitPoints = FragTrap::HitPoints;
-    EnergyPoints = ScavTrap::EnergyPoints;
-    AttackDamage = FragTrap::AttackDamage;
+    EnergyPoints = 50;
     std::cout << "DiamondTrap Parametrized Constructor called\n";
 }
 
